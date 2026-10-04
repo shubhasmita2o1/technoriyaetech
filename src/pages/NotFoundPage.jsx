@@ -12,7 +12,7 @@ export default function NotFoundPage() {
         description="The requested enterprise page or documentation could not be located."
       />
 
-      <section className="min-h-[70vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 bg-[#FAFAF7]">
+      <section className="min-h-[70vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 bg-[#F8FAFC]">
         <div className="max-w-xl mx-auto text-center">
           <Badge variant="primary" size="sm">404 Exception</Badge>
           
@@ -20,7 +20,7 @@ export default function NotFoundPage() {
             404
           </h1>
           
-          <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-[#0E1116] font-display uppercase tracking-tight">
+          <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-[#0F172A] font-display uppercase tracking-tight">
             Page Not Found
           </h2>
 

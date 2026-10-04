@@ -18,11 +18,11 @@ import { coeLabs } from '../../data/coeData';
 
 export default function Footer({ onOpenContact }) {
   return (
-    <footer className="bg-[#F4F4EE] border-t border-[#DFDFD4] text-[#111215] pt-16 md:pt-24 pb-12">
+    <footer className="bg-[#F1F5F9] border-t border-[#E2E8F0] text-[#0F172A] pt-16 md:pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Tier: Brand Statement & Global Offices */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-[#E2E2D6]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-[#E2E8F0]">
           
           {/* Brand Column */}
           <div className="lg:col-span-4">
@@ -33,7 +33,7 @@ export default function Footer({ onOpenContact }) {
                 className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div>
-                <span className="text-xl font-extrabold tracking-tight text-[#0E1116] font-display uppercase leading-tight group-hover:text-[#0B2046] transition-colors">
+                <span className="text-xl font-extrabold tracking-tight text-[#0F172A] font-display uppercase leading-tight group-hover:text-[#0B2046] transition-colors">
                   TECHNORIYA
                 </span>
                 <span className="block text-[10px] tracking-wider text-[#6B7280] font-medium uppercase">
@@ -46,7 +46,7 @@ export default function Footer({ onOpenContact }) {
               {companyData.mission}
             </p>
 
-            <div className="p-4 bg-white border border-[#E5E5DC] rounded-2xl mb-6 shadow-subtle">
+            <div className="p-4 bg-white border border-[#E2E8F0] rounded-2xl mb-6 shadow-subtle">
               <span className="text-[11px] font-mono uppercase text-[#0B2046] font-bold block mb-1">Elite Engineering Heritage</span>
               <p className="text-xs text-[#525866]">
                 Advisory and research leadership drawing from <strong>IIT, IISc</strong>, alongside global telecommunications and enterprise technology executives.
@@ -67,7 +67,7 @@ export default function Footer({ onOpenContact }) {
                 href={companyData.contact.erpPortal}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 bg-white text-[#0B2046] border border-[#DFDFD4] rounded-full hover:bg-[#F2F2EB] transition"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 bg-white text-[#0B2046] border border-[#E2E8F0] rounded-full hover:bg-[#F1F5F9] transition"
               >
                 <span>ERP Portal</span>
                 <ExternalLink className="w-3 h-3" />
@@ -80,24 +80,24 @@ export default function Footer({ onOpenContact }) {
             {companyData.offices.map((office) => (
               <div 
                 key={office.country}
-                className="bg-white border border-[#E5E5DC] rounded-3xl p-6 shadow-subtle hover:border-[#CBD5E1] transition flex flex-col justify-between"
+                className="bg-white border border-[#E2E8F0] rounded-3xl p-6 shadow-subtle hover:border-[#CBD5E1] transition flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#0B2046]">
                       {office.country}
                     </span>
-                    <span className="text-[10px] font-mono px-2 py-0.5 bg-[#F0EFE8] text-[#4A4E5A] rounded-full">
+                    <span className="text-[10px] font-mono px-2 py-0.5 bg-[#E2E8F0] text-[#4A4E5A] rounded-full">
                       {office.badge}
                     </span>
                   </div>
-                  <h4 className="text-sm font-bold text-[#0E1116] mb-2">{office.title}</h4>
+                  <h4 className="text-sm font-bold text-[#0F172A] mb-2">{office.title}</h4>
                   <p className="text-xs text-[#525866] leading-relaxed mb-4">
                     {office.address}
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-[#F0EFE8] text-xs space-y-1 text-[#4A4E5A]">
+                <div className="pt-3 border-t border-[#E2E8F0] text-xs space-y-1 text-[#4A4E5A]">
                   <p><strong>Tel:</strong> {office.phone}</p>
                   <p><strong>Email:</strong> {office.email}</p>
                 </div>
@@ -108,11 +108,11 @@ export default function Footer({ onOpenContact }) {
         </div>
 
         {/* Middle Tier: Link Matrix */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 py-16 border-b border-[#E2E2D6]">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 py-16 border-b border-[#E2E8F0]">
           
           {/* Solutions Column */}
           <div>
-            <h4 className="text-xs font-bold text-[#0E1116] uppercase tracking-wider mb-4 font-mono">
+            <h4 className="text-xs font-bold text-[#0F172A] uppercase tracking-wider mb-4 font-mono">
               Enterprise Solutions
             </h4>
             <ul className="space-y-2.5 text-xs text-[#525866]">
@@ -133,7 +133,7 @@ export default function Footer({ onOpenContact }) {
 
           {/* Centers of Excellence Column */}
           <div>
-            <h4 className="text-xs font-bold text-[#0E1116] uppercase tracking-wider mb-4 font-mono">
+            <h4 className="text-xs font-bold text-[#0F172A] uppercase tracking-wider mb-4 font-mono">
               Centers of Excellence
             </h4>
             <ul className="space-y-2.5 text-xs text-[#525866]">
@@ -150,7 +150,7 @@ export default function Footer({ onOpenContact }) {
 
           {/* Technologies Column */}
           <div>
-            <h4 className="text-xs font-bold text-[#0E1116] uppercase tracking-wider mb-4 font-mono">
+            <h4 className="text-xs font-bold text-[#0F172A] uppercase tracking-wider mb-4 font-mono">
               Emerging Technologies
             </h4>
             <ul className="space-y-2.5 text-xs text-[#525866]">
@@ -167,7 +167,7 @@ export default function Footer({ onOpenContact }) {
 
           {/* Industries Column */}
           <div>
-            <h4 className="text-xs font-bold text-[#0E1116] uppercase tracking-wider mb-4 font-mono">
+            <h4 className="text-xs font-bold text-[#0F172A] uppercase tracking-wider mb-4 font-mono">
               Industries Served
             </h4>
             <ul className="space-y-2.5 text-xs text-[#525866]">
@@ -183,7 +183,7 @@ export default function Footer({ onOpenContact }) {
 
           {/* Company Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
-            <h4 className="text-xs font-bold text-[#0E1116] uppercase tracking-wider mb-4 font-mono">
+            <h4 className="text-xs font-bold text-[#0F172A] uppercase tracking-wider mb-4 font-mono">
               Company &amp; Culture
             </h4>
             <ul className="space-y-2.5 text-xs text-[#525866]">
@@ -209,9 +209,9 @@ export default function Footer({ onOpenContact }) {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-[#6B7280]">
           <div className="flex flex-wrap items-center gap-4 text-center md:text-left">
             <span>© {new Date().getFullYear()} Technoriya e Technologies Pvt. Ltd. All rights reserved.</span>
-            <span className="hidden sm:inline text-[#D1D1C7]">•</span>
+            <span className="hidden sm:inline text-[#CBD5E1]">•</span>
             <span>CIN &amp; Incorporation Registered in India</span>
-            <span className="hidden sm:inline text-[#D1D1C7]">•</span>
+            <span className="hidden sm:inline text-[#CBD5E1]">•</span>
             <span>Global Presence: India, South Korea, Saudi Arabia, USA, Canada, UK</span>
           </div>
 

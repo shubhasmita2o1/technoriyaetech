@@ -28,7 +28,7 @@ export default function BrandStatementSection() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-[#FAFAF7] relative">
+    <section className="py-20 md:py-28 bg-[#F8FAFC] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Large Editorial Brand Manifesto */}
@@ -37,7 +37,7 @@ export default function BrandStatementSection() {
             Enterprise Philosophy
           </Badge>
 
-          <h2 className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0E1116] tracking-tight leading-[1.2] font-display uppercase">
+          <h2 className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0F172A] tracking-tight leading-[1.2] font-display uppercase">
             We are not an IT outsourcing agency. <br />
             <span className="text-[#0B2046]">
               We are an enterprise technology, engineering, and R&amp;D partner
@@ -62,13 +62,13 @@ export default function BrandStatementSection() {
             return (
               <div 
                 key={item.title}
-                className="bg-white border border-[#DFDFD4] rounded-3xl p-6 shadow-subtle hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="bg-white border border-[#E2E8F0] rounded-3xl p-6 shadow-subtle hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-[#F0F5FD] text-[#0B2046] flex items-center justify-center mb-5 border border-[#BFDCF8]">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h4 className="text-base font-bold text-[#0E1116] mb-2 font-display">
+                  <h4 className="text-base font-bold text-[#0F172A] mb-2 font-display">
                     {item.title}
                   </h4>
                   <p className="text-xs text-[#525866] leading-relaxed">
@@ -76,7 +76,7 @@ export default function BrandStatementSection() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[#F0EFE8] flex items-center justify-between text-[11px] font-mono font-semibold text-[#8B92A2]">
+                <div className="mt-6 pt-4 border-t border-[#E2E8F0] flex items-center justify-between text-[11px] font-mono font-semibold text-[#8B92A2]">
                   <span>PILLAR 0{idx + 1}</span>
                   <span className="text-[#0B2046]">&bull;</span>
                 </div>

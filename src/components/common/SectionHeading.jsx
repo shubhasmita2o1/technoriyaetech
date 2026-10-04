@@ -20,14 +20,14 @@ export default function SectionHeading({
   return (
     <div className={`mb-12 md:mb-16 ${className}`}>
       {align === 'between' ? (
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2 border-b border-[#E5E5DC]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2 border-b border-[#E2E8F0]">
           <div className="max-w-3xl">
             {eyebrow && (
               <div className="mb-3">
                 <Badge dot={badgeDot}>{eyebrow}</Badge>
               </div>
             )}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight text-[#0E1116] leading-[1.08] uppercase font-display">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight text-[#0F172A] leading-[1.08] uppercase font-display">
               {title}
             </h2>
             {subtitle && (
@@ -45,7 +45,7 @@ export default function SectionHeading({
               <Badge dot={badgeDot}>{eyebrow}</Badge>
             </div>
           )}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight text-[#0E1116] leading-[1.08] uppercase font-display">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight text-[#0F172A] leading-[1.08] uppercase font-display">
             {title}
           </h2>
           {subtitle && (

@@ -32,7 +32,7 @@ export default function SolutionsPage({ onOpenContact }) {
       />
 
       {/* Page Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>Enterprise Solutions Architecture</Badge>
           
@@ -47,7 +47,7 @@ export default function SolutionsPage({ onOpenContact }) {
 
           {/* Quick Anchor Ribbon */}
           <div className="mt-10 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-[#111215] mr-2">Jump to Solution:</span>
+            <span className="text-xs font-semibold text-[#0F172A] mr-2">Jump to Solution:</span>
             {solutionsData.map(sol => (
               <a
                 key={sol.id}
@@ -56,7 +56,7 @@ export default function SolutionsPage({ onOpenContact }) {
                 className={`text-xs font-mono px-3.5 py-1.5 rounded-full border transition-all ${
                   activeTab === sol.id 
                     ? 'bg-[#0B2046] text-white border-[#0B2046]' 
-                    : 'bg-white text-[#525866] border-[#DFDFD4] hover:border-[#0B2046]'
+                    : 'bg-white text-[#525866] border-[#E2E8F0] hover:border-[#0B2046]'
                 }`}
               >
                 {sol.title}
@@ -67,16 +67,16 @@ export default function SolutionsPage({ onOpenContact }) {
       </section>
 
       {/* Comprehensive Solutions Catalog */}
-      <section className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
           {solutionsData.map((sol, index) => (
             <div 
               key={sol.id} 
               id={sol.id} 
-              className="scroll-mt-28 bg-white border border-[#DFDFD4] rounded-[36px] p-8 sm:p-12 shadow-card"
+              className="scroll-mt-28 bg-white border border-[#E2E8F0] rounded-[36px] p-8 sm:p-12 shadow-card"
             >
               {/* Header inside Card */}
-              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-[#F0EFE8]">
+              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-[#E2E8F0]">
                 <div className="max-w-3xl">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl font-mono font-extrabold text-[#0B2046]">
@@ -85,7 +85,7 @@ export default function SolutionsPage({ onOpenContact }) {
                     <Badge variant="primary" size="sm">ENTERPRISE PRACTICE</Badge>
                   </div>
                   
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
                     {sol.title}
                   </h2>
                   <p className="mt-2 text-base sm:text-lg font-semibold text-[#0B2046]">
@@ -106,7 +106,7 @@ export default function SolutionsPage({ onOpenContact }) {
                   </Button>
                   <div className="flex flex-wrap gap-1.5">
                     {sol.tags.map(tag => (
-                      <span key={tag} className="text-[11px] font-mono px-2.5 py-1 bg-[#F4F4EE] text-[#525866] rounded-md">
+                      <span key={tag} className="text-[11px] font-mono px-2.5 py-1 bg-[#F1F5F9] text-[#525866] rounded-md">
                         {tag}
                       </span>
                     ))}
@@ -115,7 +115,7 @@ export default function SolutionsPage({ onOpenContact }) {
               </div>
 
               {/* Verified Metrics Strip */}
-              <div className="my-8 grid grid-cols-1 sm:grid-cols-3 gap-4 bg-[#F9F9F4] border border-[#E5E5DC] rounded-2xl p-5 text-center">
+              <div className="my-8 grid grid-cols-1 sm:grid-cols-3 gap-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl p-5 text-center">
                 {sol.verifiedMetrics.map((vm, vIdx) => (
                   <div key={vIdx} className="p-2">
                     <span className="block text-2xl font-mono font-extrabold text-[#0B2046]">{vm.value}</span>
@@ -134,10 +134,10 @@ export default function SolutionsPage({ onOpenContact }) {
                   {sol.capabilities.map((cap, cIdx) => (
                     <div 
                       key={cIdx} 
-                      className="p-6 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl hover:border-[#0B2046] hover:bg-white transition-all duration-300 flex flex-col justify-between"
+                      className="p-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl hover:border-[#0B2046] hover:bg-white transition-all duration-300 flex flex-col justify-between"
                     >
                       <div>
-                        <h4 className="text-base font-bold text-[#0E1116] font-display mb-2">
+                        <h4 className="text-base font-bold text-[#0F172A] font-display mb-2">
                           {cap.name}
                         </h4>
                         <p className="text-xs text-[#525866] leading-relaxed mb-4">
@@ -146,7 +146,7 @@ export default function SolutionsPage({ onOpenContact }) {
                       </div>
 
                       {cap.deliverables && (
-                        <div className="pt-3 border-t border-[#EAEAE2] space-y-1.5">
+                        <div className="pt-3 border-t border-[#E2E8F0] space-y-1.5">
                           {cap.deliverables.map((del, dIdx) => (
                             <div key={dIdx} className="flex items-center gap-1.5 text-[11px] text-[#2D3139]">
                               <CheckCircle2 className="w-3.5 h-3.5 text-[#0B2046] flex-shrink-0" />
@@ -166,10 +166,10 @@ export default function SolutionsPage({ onOpenContact }) {
       </section>
 
       {/* Bottom Consultation Banner */}
-      <section className="py-20 bg-[#F4F4EE] border-t border-[#DFDFD4]">
+      <section className="py-20 bg-[#F1F5F9] border-t border-[#E2E8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge variant="primary" dot={true}>Enterprise Engagement</Badge>
-          <h2 className="mt-6 text-3xl sm:text-4xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+          <h2 className="mt-6 text-3xl sm:text-4xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
             Ready to Architect Your Enterprise Roadmap?
           </h2>
           <p className="mt-4 text-base text-[#4B5563] max-w-2xl mx-auto leading-relaxed">

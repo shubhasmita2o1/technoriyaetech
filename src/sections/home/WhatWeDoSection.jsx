@@ -78,7 +78,7 @@ export default function WhatWeDoSection({ onOpenContact }) {
   const current = pillars[activePillar];
 
   return (
-    <section className="py-20 md:py-32 bg-[#F4F4EE] border-y border-[#DFDFD4] relative">
+    <section className="py-20 md:py-32 bg-[#F1F5F9] border-y border-[#E2E8F0] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -109,12 +109,12 @@ export default function WhatWeDoSection({ onOpenContact }) {
                   className={`p-6 rounded-3xl cursor-pointer transition-all duration-300 border text-left ${
                     isSelected
                       ? 'bg-white border-[#0B2046] shadow-elevated translate-x-2'
-                      : 'bg-white/60 hover:bg-white border-[#DFDFD4] hover:border-[#CBD5E1]'
+                      : 'bg-white/60 hover:bg-white border-[#E2E8F0] hover:border-[#CBD5E1]'
                   }`}
                 >
                   <div className="flex items-center justify-between">
                     <span className={`text-xs font-mono font-bold px-2.5 py-1 rounded-full ${
-                      isSelected ? 'bg-[#0B2046] text-white' : 'bg-[#EAEAE2] text-[#525866]'
+                      isSelected ? 'bg-[#0B2046] text-white' : 'bg-[#E2E8F0] text-[#525866]'
                     }`}>
                       {pillar.number}
                     </span>
@@ -124,7 +124,7 @@ export default function WhatWeDoSection({ onOpenContact }) {
                   </div>
 
                   <h3 className={`mt-3 text-lg sm:text-xl font-bold font-display uppercase tracking-tight transition-colors ${
-                    isSelected ? 'text-[#0B2046]' : 'text-[#0E1116]'
+                    isSelected ? 'text-[#0B2046]' : 'text-[#0F172A]'
                   }`}>
                     {pillar.title}
                   </h3>
@@ -142,18 +142,18 @@ export default function WhatWeDoSection({ onOpenContact }) {
           </div>
 
           {/* Detailed Content & Image Panel (7 cols) */}
-          <div className="lg:col-span-7 bg-white border border-[#DFDFD4] rounded-[32px] p-6 sm:p-8 md:p-10 shadow-float flex flex-col justify-between">
+          <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[32px] p-6 sm:p-8 md:p-10 shadow-float flex flex-col justify-between">
             
             {/* Top row */}
             <div>
-              <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#E5E5DC]">
+              <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#E2E8F0]">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-mono font-extrabold text-[#0B2046]">
                     {current.number}
                   </span>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-[#525866] font-mono">CORE CAPABILITY</span>
-                    <h3 className="text-xl sm:text-2xl font-bold text-[#0E1116] font-display uppercase">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A] font-display uppercase">
                       {current.title}
                     </h3>
                   </div>
@@ -161,7 +161,7 @@ export default function WhatWeDoSection({ onOpenContact }) {
 
                 <Link
                   to={current.link}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2046] hover:text-[#2563EB] transition px-4 py-2 bg-[#F4F4EE] hover:bg-[#EAEAE2] rounded-full"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2046] hover:text-[#2563EB] transition px-4 py-2 bg-[#F1F5F9] hover:bg-[#E2E8F0] rounded-full"
                 >
                   <span>Explore Dedicated Page</span>
                   <ArrowUpRight className="w-4 h-4" />
@@ -190,15 +190,15 @@ export default function WhatWeDoSection({ onOpenContact }) {
             </div>
 
             {/* Bottom Row: Image preview & tech tags */}
-            <div className="mt-8 pt-6 border-t border-[#E5E5DC] flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="mt-8 pt-6 border-t border-[#E2E8F0] flex flex-col sm:flex-row items-center justify-between gap-6">
               
               {/* Tags */}
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-xs font-semibold text-[#0E1116] mr-1">Stack:</span>
+                <span className="text-xs font-semibold text-[#0F172A] mr-1">Stack:</span>
                 {current.technologies.map(tag => (
                   <span 
                     key={tag}
-                    className="text-xs font-mono px-3 py-1 bg-[#F4F4EE] text-[#0B2046] border border-[#DFDFD4] rounded-lg"
+                    className="text-xs font-mono px-3 py-1 bg-[#F1F5F9] text-[#0B2046] border border-[#E2E8F0] rounded-lg"
                   >
                     {tag}
                   </span>

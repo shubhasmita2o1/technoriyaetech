@@ -12,7 +12,7 @@ export default function CoEPreviewSection({ onOpenContact }) {
   const activeLab = coeLabs.find(lab => lab.id === selectedLabId) || coeLabs[0];
 
   return (
-    <section className="py-20 md:py-32 bg-[#F7F7F2] border-y border-[#DFDFD4] relative">
+    <section className="py-20 md:py-32 bg-[#F1F5F9] border-y border-[#E2E8F0] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -39,7 +39,7 @@ export default function CoEPreviewSection({ onOpenContact }) {
                 className={`p-3 rounded-2xl text-left border transition-all duration-300 flex flex-col justify-between ${
                   isSelected
                     ? 'bg-[#0B2046] text-white border-[#0B2046] shadow-card -translate-y-1'
-                    : 'bg-white hover:bg-[#F2F2EB] text-[#111215] border-[#DFDFD4]'
+                    : 'bg-white hover:bg-[#F1F5F9] text-[#0F172A] border-[#E2E8F0]'
                 }`}
               >
                 <span className={`text-[10px] font-mono font-bold ${isSelected ? 'text-[#BFDCF8]' : 'text-[#888E9B]'}`}>
@@ -54,11 +54,11 @@ export default function CoEPreviewSection({ onOpenContact }) {
         </div>
 
         {/* Active Lab Showcase Stage */}
-        <div className="mt-8 bg-white border border-[#DFDFD4] rounded-[36px] p-6 sm:p-10 md:p-12 shadow-float grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="mt-8 bg-white border border-[#E2E8F0] rounded-[36px] p-6 sm:p-10 md:p-12 shadow-float grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           {/* Visual Showcase (5 cols) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-[28px] overflow-hidden aspect-[4/3] bg-[#EBEBE2] border border-[#E5E5DC]">
+            <div className="relative rounded-[28px] overflow-hidden aspect-[4/3] bg-[#E2E8F0] border border-[#E2E8F0]">
               <img
                 src={activeLab.image}
                 alt={activeLab.name}
@@ -75,7 +75,7 @@ export default function CoEPreviewSection({ onOpenContact }) {
             </div>
 
             {/* Quick Stat Bar */}
-            <div className="mt-4 grid grid-cols-3 gap-3 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl p-4 text-center">
+            <div className="mt-4 grid grid-cols-3 gap-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl p-4 text-center">
               {Object.entries(activeLab.stats).map(([k, v]) => (
                 <div key={k}>
                   <span className="block text-xs font-extrabold text-[#0B2046] font-mono">{v}</span>
@@ -95,7 +95,7 @@ export default function CoEPreviewSection({ onOpenContact }) {
                 <span className="text-xs font-mono text-[#525866]">Commercial &amp; Academic Incubator</span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
                 {activeLab.name}
               </h3>
               <p className="mt-1 text-sm font-semibold text-[#0B2046]">
@@ -122,14 +122,14 @@ export default function CoEPreviewSection({ onOpenContact }) {
               </div>
 
               {/* Real World Impact */}
-              <div className="mt-6 p-4 bg-[#F7F7F2] border border-[#E5E5DC] rounded-2xl text-xs text-[#4A4E5A]">
-                <strong className="text-[#0E1116] block mb-0.5">Real-World Enterprise Application:</strong>
+              <div className="mt-6 p-4 bg-[#F1F5F9] border border-[#E2E8F0] rounded-2xl text-xs text-[#4A4E5A]">
+                <strong className="text-[#0F172A] block mb-0.5">Real-World Enterprise Application:</strong>
                 {activeLab.realWorldApplication}
               </div>
             </div>
 
             {/* CTAs */}
-            <div className="mt-8 pt-6 border-t border-[#E5E5DC] flex flex-wrap items-center justify-between gap-4">
+            <div className="mt-8 pt-6 border-t border-[#E2E8F0] flex flex-wrap items-center justify-between gap-4">
               <Button
                 to={`/centers-of-excellence#${activeLab.id}`}
                 variant="primary"

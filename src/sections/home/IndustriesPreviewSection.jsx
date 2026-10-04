@@ -12,7 +12,7 @@ export default function IndustriesPreviewSection({ onOpenContact }) {
   const activeIndustry = industriesData.find(ind => ind.id === selectedIndustryId) || industriesData[0];
 
   return (
-    <section className="py-20 md:py-32 bg-[#F7F7F2] border-y border-[#DFDFD4] relative">
+    <section className="py-20 md:py-32 bg-[#F1F5F9] border-y border-[#E2E8F0] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -43,11 +43,11 @@ export default function IndustriesPreviewSection({ onOpenContact }) {
                   className={`w-full p-4 rounded-2xl text-left border transition-all duration-300 flex items-center justify-between ${
                     isSelected
                       ? 'bg-white border-[#0B2046] shadow-card translate-x-2'
-                      : 'bg-white/60 hover:bg-white border-[#DFDFD4] hover:border-[#CBD5E1]'
+                      : 'bg-white/60 hover:bg-white border-[#E2E8F0] hover:border-[#CBD5E1]'
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-[#0B2046]' : 'bg-[#D1D1C7]'}`} />
+                    <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-[#0B2046]' : 'bg-[#CBD5E1]'}`} />
                     <span className={`text-sm font-bold font-display uppercase tracking-tight ${
                       isSelected ? 'text-[#0B2046]' : 'text-[#2D3139]'
                     }`}>
@@ -63,14 +63,14 @@ export default function IndustriesPreviewSection({ onOpenContact }) {
           </div>
 
           {/* Detailed Sector Preview Panel (7 cols) */}
-          <div className="lg:col-span-7 bg-white border border-[#DFDFD4] rounded-[32px] p-6 sm:p-10 shadow-float flex flex-col justify-between">
+          <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[32px] p-6 sm:p-10 shadow-float flex flex-col justify-between">
             <div>
               
               {/* Header */}
-              <div className="flex items-center justify-between pb-5 border-b border-[#E5E5DC]">
+              <div className="flex items-center justify-between pb-5 border-b border-[#E2E8F0]">
                 <div>
                   <Badge variant="primary" size="sm">{activeIndustry.shortName} Specialization</Badge>
-                  <h3 className="mt-2 text-2xl sm:text-3xl font-bold text-[#0E1116] font-display uppercase">
+                  <h3 className="mt-2 text-2xl sm:text-3xl font-bold text-[#0F172A] font-display uppercase">
                     {activeIndustry.name}
                   </h3>
                 </div>
@@ -107,7 +107,7 @@ export default function IndustriesPreviewSection({ onOpenContact }) {
               </div>
 
               {/* Metrics Strip */}
-              <div className="mt-6 grid grid-cols-3 gap-3 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl p-3 text-center">
+              <div className="mt-6 grid grid-cols-3 gap-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl p-3 text-center">
                 {activeIndustry.verifiedMetrics.map((vm, vIdx) => (
                   <div key={vIdx}>
                     <span className="block text-xs font-extrabold text-[#0B2046] font-mono">{vm.value}</span>
@@ -119,7 +119,7 @@ export default function IndustriesPreviewSection({ onOpenContact }) {
             </div>
 
             {/* Bottom Row */}
-            <div className="mt-8 pt-6 border-t border-[#E5E5DC] flex flex-wrap items-center justify-between gap-4">
+            <div className="mt-8 pt-6 border-t border-[#E2E8F0] flex flex-wrap items-center justify-between gap-4">
               <Button
                 to={`/industries#${activeIndustry.id}`}
                 variant="primary"

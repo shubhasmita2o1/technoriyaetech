@@ -96,14 +96,14 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
         role="dialog"
         aria-modal="true"
         aria-labelledby="contact-modal-title"
-        className="relative w-full max-w-3xl bg-[#FAFAF7] border border-[#DFDFD4] rounded-3xl shadow-float overflow-hidden z-10 max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95 duration-200"
+        className="relative w-full max-w-3xl bg-[#F8FAFC] border border-[#E2E8F0] rounded-3xl shadow-float overflow-hidden z-10 max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95 duration-200"
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 sm:px-8 py-5 border-b border-[#E5E5DC] bg-white">
+        <div className="flex items-center justify-between px-6 sm:px-8 py-5 border-b border-[#E2E8F0] bg-white">
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#2563EB]" />
             <div>
-              <h3 id="contact-modal-title" className="text-lg font-bold text-[#0E1116] tracking-tight">
+              <h3 id="contact-modal-title" className="text-lg font-bold text-[#0F172A] tracking-tight">
                 TALK TO AN EXPERT
               </h3>
               <p className="text-xs text-[#525866]">
@@ -113,7 +113,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
           </div>
           <button
             onClick={onClose}
-            className="p-2 text-[#525866] hover:text-[#0E1116] hover:bg-[#F4F4EE] rounded-full transition-colors"
+            className="p-2 text-[#525866] hover:text-[#0F172A] hover:bg-[#F1F5F9] rounded-full transition-colors"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
@@ -127,14 +127,14 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
               <div className="w-16 h-16 bg-[#ECFDF5] border border-[#A7F3D0] rounded-full flex items-center justify-center mx-auto mb-4 text-[#059669]">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
-              <h4 className="text-2xl font-bold text-[#0E1116] mb-2 font-display">Inquiry Transmitted Successfully</h4>
+              <h4 className="text-2xl font-bold text-[#0F172A] mb-2 font-display">Inquiry Transmitted Successfully</h4>
               <p className="text-sm text-[#525866] mb-6 leading-relaxed">
                 Thank you, {formData.fullName}. A senior enterprise technology specialist from our Navi Mumbai headquarters or international desk will review your requirements and respond within 24 business hours.
               </p>
-              <div className="bg-white border border-[#E5E5DC] rounded-2xl p-4 text-left text-xs text-[#525866] space-y-1.5 mb-6">
-                <p><strong className="text-[#0E1116]">Selected Focus:</strong> {solutionsData.find(s => s.id === formData.solution)?.title || formData.solution}</p>
-                <p><strong className="text-[#0E1116]">Contact Email:</strong> {formData.email}</p>
-                <p><strong className="text-[#0E1116]">Direct Escalations:</strong> info@technoriya.com | +91 9892178457</p>
+              <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 text-left text-xs text-[#525866] space-y-1.5 mb-6">
+                <p><strong className="text-[#0F172A]">Selected Focus:</strong> {solutionsData.find(s => s.id === formData.solution)?.title || formData.solution}</p>
+                <p><strong className="text-[#0F172A]">Contact Email:</strong> {formData.email}</p>
+                <p><strong className="text-[#0F172A]">Direct Escalations:</strong> info@technoriya.com | +91 9892178457</p>
               </div>
               <Button onClick={resetForm} variant="primary" size="md">
                 Done &amp; Return to Website
@@ -155,7 +155,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                     onChange={handleChange}
                     required
                     placeholder="e.g. Dr. Rajesh Sharma"
-                    className="w-full px-4 py-2.5 bg-white border border-[#DFDFD4] rounded-xl text-sm text-[#111215] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
+                    className="w-full px-4 py-2.5 bg-white border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
                   />
                 </div>
 
@@ -171,7 +171,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                     onChange={handleChange}
                     required
                     placeholder="name@company.com"
-                    className="w-full px-4 py-2.5 bg-white border border-[#DFDFD4] rounded-xl text-sm text-[#111215] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
+                    className="w-full px-4 py-2.5 bg-white border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
                   />
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 98921 78457"
-                    className="w-full px-4 py-2.5 bg-white border border-[#DFDFD4] rounded-xl text-sm text-[#111215] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
+                    className="w-full px-4 py-2.5 bg-white border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
                   />
                 </div>
 
@@ -203,7 +203,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Company or Government Dept."
-                    className="w-full px-4 py-2.5 bg-white border border-[#DFDFD4] rounded-xl text-sm text-[#111215] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
+                    className="w-full px-4 py-2.5 bg-white border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
                   />
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                   name="solution"
                   value={formData.solution}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 bg-white border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
+                  className="w-full px-4 py-2.5 bg-white border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition"
                 >
                   {solutionsData.map(sol => (
                     <option key={sol.id} value={sol.id}>
@@ -242,7 +242,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                   onChange={handleChange}
                   required
                   placeholder="Outline your timeline, current architecture challenges, or specific regulatory milestones..."
-                  className="w-full px-4 py-2.5 bg-white border border-[#DFDFD4] rounded-xl text-sm text-[#111215] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition resize-none"
+                  className="w-full px-4 py-2.5 bg-white border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] placeholder-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#0B2046] focus:border-transparent transition resize-none"
                 />
               </div>
 
@@ -253,7 +253,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
               )}
 
               {/* Action buttons */}
-              <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#E5E5DC]">
+              <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#E2E8F0]">
                 <div className="flex items-center gap-4 text-xs text-[#525866]">
                   <span className="flex items-center gap-1.5">
                     <MapPin className="w-3.5 h-3.5 text-[#2563EB]" /> Navi Mumbai • Pangyo • Jubail
@@ -263,7 +263,7 @@ export default function ContactModal({ isOpen, onClose, defaultSolution = '' }) 
                   <button
                     type="button"
                     onClick={onClose}
-                    className="px-5 py-2.5 text-sm font-medium text-[#525866] hover:text-[#0E1116] rounded-full transition"
+                    className="px-5 py-2.5 text-sm font-medium text-[#525866] hover:text-[#0F172A] rounded-full transition"
                   >
                     Cancel
                   </button>

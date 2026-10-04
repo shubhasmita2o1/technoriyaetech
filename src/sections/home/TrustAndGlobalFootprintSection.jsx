@@ -48,7 +48,7 @@ export default function TrustAndGlobalFootprintSection() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#F4F4EE] border-t border-[#DFDFD4] relative">
+    <section className="py-16 md:py-24 bg-[#F1F5F9] border-t border-[#E2E8F0] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -66,7 +66,7 @@ export default function TrustAndGlobalFootprintSection() {
             return (
               <div
                 key={idx}
-                className="bg-white border border-[#DFDFD4] rounded-3xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white border border-[#E2E8F0] rounded-3xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
@@ -78,7 +78,7 @@ export default function TrustAndGlobalFootprintSection() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#0E1116] font-display uppercase tracking-tight leading-snug group-hover:text-[#0B2046] transition-colors">
+                  <h3 className="text-xl font-bold text-[#0F172A] font-display uppercase tracking-tight leading-snug group-hover:text-[#0B2046] transition-colors">
                     {item.title}
                   </h3>
 
@@ -87,7 +87,7 @@ export default function TrustAndGlobalFootprintSection() {
                   </p>
 
                   {/* Highlights list */}
-                  <div className="mt-6 space-y-2.5 pt-6 border-t border-[#F0EFE8]">
+                  <div className="mt-6 space-y-2.5 pt-6 border-t border-[#E2E8F0]">
                     {item.highlights.map((hl, hIdx) => (
                       <div key={hIdx} className="flex items-start gap-2 text-xs text-[#2B2F38]">
                         <CheckCircle2 className="w-4 h-4 text-[#0B2046] flex-shrink-0 mt-0.5" />
@@ -97,7 +97,7 @@ export default function TrustAndGlobalFootprintSection() {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-[#F0EFE8]">
+                <div className="mt-8 pt-4 border-t border-[#E2E8F0]">
                   <Link
                     to={item.linkTo}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2046] hover:text-[#2563EB] transition-colors"

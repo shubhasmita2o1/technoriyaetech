@@ -50,7 +50,7 @@ export default function CompanyPage({ onOpenContact }) {
       />
 
       {/* Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>Corporate Profile &amp; Governance</Badge>
           
@@ -66,7 +66,7 @@ export default function CompanyPage({ onOpenContact }) {
           {/* Quick Metrics */}
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
             {companyData.highlights.map((h, idx) => (
-              <div key={idx} className="bg-white border border-[#DFDFD4] rounded-2xl p-4 shadow-subtle">
+              <div key={idx} className="bg-white border border-[#E2E8F0] rounded-2xl p-4 shadow-subtle">
                 <span className="text-xs text-[#525866] font-medium block">{h.label}</span>
                 <span className="text-xl sm:text-2xl font-extrabold text-[#0B2046] font-display mt-0.5 block">{h.value}</span>
                 <span className="text-[11px] text-[#6B7280] block mt-0.5">{h.detail}</span>
@@ -77,10 +77,10 @@ export default function CompanyPage({ onOpenContact }) {
       </section>
 
       {/* Vision & Mission Deep-Dive */}
-      <section id="vision-mission" className="py-20 md:py-28 bg-[#FAFAF7] border-b border-[#DFDFD4]">
+      <section id="vision-mission" className="py-20 md:py-28 bg-[#F8FAFC] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white border border-[#DFDFD4] rounded-[32px] p-8 sm:p-12 shadow-card flex flex-col justify-between">
+            <div className="bg-white border border-[#E2E8F0] rounded-[32px] p-8 sm:p-12 shadow-card flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#F0F5FD] text-[#0B2046] flex items-center justify-center border border-[#BFDCF8]">
@@ -88,7 +88,7 @@ export default function CompanyPage({ onOpenContact }) {
                   </div>
                   <div>
                     <span className="text-xs font-mono text-[#525866] uppercase">Foundational Purpose</span>
-                    <h3 className="text-xl font-extrabold text-[#0E1116] font-display uppercase">OUR MISSION</h3>
+                    <h3 className="text-xl font-extrabold text-[#0F172A] font-display uppercase">OUR MISSION</h3>
                   </div>
                 </div>
 
@@ -96,12 +96,12 @@ export default function CompanyPage({ onOpenContact }) {
                   "{companyData.mission}"
                 </blockquote>
               </div>
-              <p className="mt-6 pt-6 border-t border-[#F0EFE8] text-xs text-[#525866]">
+              <p className="mt-6 pt-6 border-t border-[#E2E8F0] text-xs text-[#525866]">
                 Ensuring that smart grid utilities, telecom infrastructure, and industrial factories gain affordable, sovereign, and secure access to world-class software and automation.
               </p>
             </div>
 
-            <div className="bg-white border border-[#DFDFD4] rounded-[32px] p-8 sm:p-12 shadow-card flex flex-col justify-between">
+            <div className="bg-white border border-[#E2E8F0] rounded-[32px] p-8 sm:p-12 shadow-card flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#FEF3C7] text-[#92400E] flex items-center justify-center border border-[#FDE68A]">
@@ -109,15 +109,15 @@ export default function CompanyPage({ onOpenContact }) {
                   </div>
                   <div>
                     <span className="text-xs font-mono text-[#525866] uppercase">Long-Term Trajectory</span>
-                    <h3 className="text-xl font-extrabold text-[#0E1116] font-display uppercase">OUR VISION</h3>
+                    <h3 className="text-xl font-extrabold text-[#0F172A] font-display uppercase">OUR VISION</h3>
                   </div>
                 </div>
 
-                <blockquote className="text-xl sm:text-2xl font-bold text-[#0E1116] font-display uppercase tracking-tight leading-snug">
+                <blockquote className="text-xl sm:text-2xl font-bold text-[#0F172A] font-display uppercase tracking-tight leading-snug">
                   "{companyData.vision}"
                 </blockquote>
               </div>
-              <p className="mt-6 pt-6 border-t border-[#F0EFE8] text-xs text-[#525866]">
+              <p className="mt-6 pt-6 border-t border-[#E2E8F0] text-xs text-[#525866]">
                 Accelerating the symbiotic relationship between real-time data digitization and heavy industrial automation to build smarter, safer commercial enterprises.
               </p>
             </div>
@@ -126,7 +126,7 @@ export default function CompanyPage({ onOpenContact }) {
       </section>
 
       {/* Leadership & Advisory Team */}
-      <section id="leadership" className="py-20 md:py-32 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section id="leadership" className="py-20 md:py-32 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Leadership &amp; Technical Council"
@@ -144,15 +144,15 @@ export default function CompanyPage({ onOpenContact }) {
             {companyData.leadership.map((leader, idx) => (
               <div 
                 key={idx}
-                className="bg-white border border-[#DFDFD4] rounded-3xl p-6 sm:p-8 shadow-subtle hover:shadow-card transition flex flex-col justify-between"
+                className="bg-white border border-[#E2E8F0] rounded-3xl p-6 sm:p-8 shadow-subtle hover:shadow-card transition flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#F0EFE8]">
+                  <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#E2E8F0]">
                     <span className="text-xs font-mono font-bold text-[#0B2046]">COUNCIL 0{idx + 1}</span>
                     <Badge variant="neutral" size="sm">{leader.role}</Badge>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#0E1116] font-display">
+                  <h3 className="text-xl font-bold text-[#0F172A] font-display">
                     {leader.name}
                   </h3>
                   <span className="text-xs font-semibold text-[#0B2046] block mt-0.5">
@@ -170,7 +170,7 @@ export default function CompanyPage({ onOpenContact }) {
       </section>
 
       {/* Global Offices */}
-      <section id="offices" className="py-20 md:py-32 bg-[#FAFAF7] border-b border-[#DFDFD4]">
+      <section id="offices" className="py-20 md:py-32 bg-[#F8FAFC] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Global Footprint"
@@ -183,7 +183,7 @@ export default function CompanyPage({ onOpenContact }) {
             {companyData.offices.map((office) => (
               <div 
                 key={office.country}
-                className="bg-white border border-[#DFDFD4] rounded-3xl p-8 shadow-card flex flex-col justify-between"
+                className="bg-white border border-[#E2E8F0] rounded-3xl p-8 shadow-card flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -193,13 +193,13 @@ export default function CompanyPage({ onOpenContact }) {
                     <Badge variant="primary" size="sm">{office.badge}</Badge>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#0E1116] font-display mb-2">{office.title}</h3>
+                  <h3 className="text-xl font-bold text-[#0F172A] font-display mb-2">{office.title}</h3>
                   <p className="text-xs sm:text-sm text-[#525866] leading-relaxed mb-6">
                     {office.address}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#F0EFE8] space-y-2 text-xs text-[#374151]">
+                <div className="pt-4 border-t border-[#E2E8F0] space-y-2 text-xs text-[#374151]">
                   <p className="flex items-center gap-2">
                     <Phone className="w-3.5 h-3.5 text-[#0B2046]" />
                     <span>{office.phone}</span>
@@ -216,7 +216,7 @@ export default function CompanyPage({ onOpenContact }) {
       </section>
 
       {/* Certifications & Statutory Audits */}
-      <section id="certifications" className="py-20 md:py-32 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section id="certifications" className="py-20 md:py-32 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Statutory Governance"
@@ -229,19 +229,19 @@ export default function CompanyPage({ onOpenContact }) {
             {certifications.map((cert, cIdx) => (
               <div 
                 key={cIdx}
-                className="bg-white border border-[#DFDFD4] rounded-2xl p-6 shadow-subtle hover:border-[#0B2046] transition"
+                className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-subtle hover:border-[#0B2046] transition"
               >
                 <div className="flex items-center gap-2.5 mb-3">
                   <ShieldCheck className="w-5 h-5 text-[#0B2046]" />
                   <span className="text-[10px] font-mono uppercase text-[#0B2046] font-bold">Standard 0{cIdx + 1}</span>
                 </div>
-                <h3 className="text-base font-bold text-[#0E1116] font-display mb-1">
+                <h3 className="text-base font-bold text-[#0F172A] font-display mb-1">
                   {cert.title}
                 </h3>
                 <span className="text-xs font-semibold text-[#525866] block mb-3">
                   Authority: {cert.authority}
                 </span>
-                <p className="text-xs text-[#525866] leading-relaxed pt-3 border-t border-[#F0EFE8]">
+                <p className="text-xs text-[#525866] leading-relaxed pt-3 border-t border-[#E2E8F0]">
                   {cert.scope}
                 </p>
               </div>
@@ -251,7 +251,7 @@ export default function CompanyPage({ onOpenContact }) {
       </section>
 
       {/* Partners & Associates Catalog */}
-      <section id="partners" className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section id="partners" className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Strategic Alliances"
@@ -264,14 +264,14 @@ export default function CompanyPage({ onOpenContact }) {
             {partnersData.map((partner, pIdx) => (
               <div 
                 key={pIdx}
-                className="bg-white border border-[#DFDFD4] rounded-2xl p-6 shadow-subtle hover:shadow-card transition flex flex-col justify-between"
+                className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-subtle hover:shadow-card transition flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-[10px] font-mono uppercase text-[#0B2046] font-bold">{partner.category}</span>
                     <span className="text-xs text-[#8A8F9E]">&bull;</span>
                   </div>
-                  <h3 className="text-base font-bold text-[#0E1116] font-display">
+                  <h3 className="text-base font-bold text-[#0F172A] font-display">
                     {partner.name}
                   </h3>
                   <span className="text-xs font-semibold text-[#2563EB] block mt-0.5">

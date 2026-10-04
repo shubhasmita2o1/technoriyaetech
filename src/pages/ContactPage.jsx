@@ -51,7 +51,7 @@ export default function ContactPage() {
       />
 
       {/* Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>Direct Consultation</Badge>
           
@@ -65,9 +65,9 @@ export default function ContactPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 text-xs text-[#525866]">
-            <span className="font-semibold text-[#111215]">Global Presence:</span>
+            <span className="font-semibold text-[#0F172A]">Global Presence:</span>
             {companyData.globalMarkets.map(market => (
-              <span key={market} className="px-3 py-1 bg-white border border-[#DFDFD4] rounded-full font-medium">
+              <span key={market} className="px-3 py-1 bg-white border border-[#E2E8F0] rounded-full font-medium">
                 {market}
               </span>
             ))}
@@ -76,15 +76,15 @@ export default function ContactPage() {
       </section>
 
       {/* Main Grid: Contact Form + Global Office Cards */}
-      <section className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             {/* Form Column (7 cols) */}
-            <div className="lg:col-span-7 bg-white border border-[#DFDFD4] rounded-[36px] p-8 sm:p-12 shadow-card">
-              <div className="pb-6 mb-6 border-b border-[#F0EFE8]">
+            <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[36px] p-8 sm:p-12 shadow-card">
+              <div className="pb-6 mb-6 border-b border-[#E2E8F0]">
                 <Badge variant="neutral" size="sm">Confidential Project Scoping</Badge>
-                <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-[#0E1116] font-display uppercase tracking-tight">
+                <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-[#0F172A] font-display uppercase tracking-tight">
                   Initiate Strategic Inquiry
                 </h2>
                 <p className="mt-1 text-xs sm:text-sm text-[#525866]">
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   <div className="w-16 h-16 bg-[#ECFDF5] border border-[#A7F3D0] rounded-full flex items-center justify-center mx-auto mb-4 text-[#059669]">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0E1116] mb-2 font-display">Inquiry Transmitted</h3>
+                  <h3 className="text-2xl font-bold text-[#0F172A] mb-2 font-display">Inquiry Transmitted</h3>
                   <p className="text-sm text-[#525866] mb-6 leading-relaxed">
                     Thank you, {formData.fullName}. A senior enterprise technology specialist will review your project brief and follow up within 24 business hours.
                   </p>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="Your Full Name"
-                        className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                        className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                       />
                     </div>
 
@@ -149,7 +149,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="corporate@domain.com"
-                        className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                        className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                       />
                     </div>
                   </div>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="+91..."
-                        className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                        className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                       />
                     </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
                         value={formData.company}
                         onChange={handleChange}
                         placeholder="Entity or Enterprise Name"
-                        className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                        className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                       />
                     </div>
                   </div>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                         name="solution"
                         value={formData.solution}
                         onChange={handleChange}
-                        className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                        className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                       >
                         {solutionsData.map(sol => (
                           <option key={sol.id} value={sol.id}>
@@ -214,7 +214,7 @@ export default function ContactPage() {
                         name="country"
                         value={formData.country}
                         onChange={handleChange}
-                        className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                        className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                       >
                         <option value="India">India (Navi Mumbai HQ)</option>
                         <option value="South Korea">South Korea (Pangyo Office)</option>
@@ -237,7 +237,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="Detail current infrastructure constraints, target deadlines, or specific regulatory frameworks..."
-                      className="w-full px-4 py-2.5 bg-[#FAF9F5] border border-[#DFDFD4] rounded-xl text-sm text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046] resize-none"
+                      className="w-full px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046] resize-none"
                     />
                   </div>
 
@@ -297,7 +297,7 @@ export default function ContactPage() {
               {companyData.offices.map((office) => (
                 <div 
                   key={office.country}
-                  className="bg-white border border-[#DFDFD4] rounded-3xl p-6 shadow-subtle hover:border-[#CBD5E1] transition"
+                  className="bg-white border border-[#E2E8F0] rounded-3xl p-6 shadow-subtle hover:border-[#CBD5E1] transition"
                 >
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-extrabold uppercase tracking-wider text-[#0B2046]">
@@ -306,12 +306,12 @@ export default function ContactPage() {
                     <Badge variant="neutral" size="sm">{office.badge}</Badge>
                   </div>
 
-                  <h4 className="text-base font-bold text-[#0E1116] font-display">{office.title}</h4>
+                  <h4 className="text-base font-bold text-[#0F172A] font-display">{office.title}</h4>
                   <p className="mt-1 text-xs text-[#525866] leading-relaxed mb-4">
                     {office.address}
                   </p>
 
-                  <div className="pt-3 border-t border-[#F0EFE8] flex items-center justify-between text-xs text-[#374151]">
+                  <div className="pt-3 border-t border-[#E2E8F0] flex items-center justify-between text-xs text-[#374151]">
                     <span>Tel: {office.phone}</span>
                     <a 
                       href={`https://maps.google.com/?q=${encodeURIComponent(office.address)}`} 

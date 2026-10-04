@@ -6,7 +6,7 @@ import { companyData } from '../../data/companyData';
 
 export default function FinalCTASection({ onOpenContact }) {
   return (
-    <section className="py-24 md:py-36 bg-[#FAFAF7] relative overflow-hidden border-t border-[#DFDFD4]">
+    <section className="py-24 md:py-36 bg-[#F8FAFC] relative overflow-hidden border-t border-[#E2E8F0]">
       {/* Subtle architectural background gradients (strictly light, warm, no neon) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-blue-100/40 via-amber-50/40 to-stone-100/50 rounded-full blur-3xl pointer-events-none" />
 
@@ -18,7 +18,7 @@ export default function FinalCTASection({ onOpenContact }) {
 
         <h2 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#0B0D11] font-display uppercase tracking-tight leading-[1.05]">
           LET'S BUILD <br />
-          <span className="text-[#0B2046] underline decoration-[#DFDFD4] decoration-2 underline-offset-8">
+          <span className="text-[#0B2046] underline decoration-[#E2E8F0] decoration-2 underline-offset-8">
             WHAT'S NEXT.
           </span>
         </h2>
@@ -48,7 +48,7 @@ export default function FinalCTASection({ onOpenContact }) {
         </div>
 
         {/* Global Direct Touchpoints */}
-        <div className="mt-16 pt-10 border-t border-[#DFDFD4] flex flex-wrap items-center justify-center gap-8 text-xs text-[#525866]">
+        <div className="mt-16 pt-10 border-t border-[#E2E8F0] flex flex-wrap items-center justify-center gap-8 text-xs text-[#525866]">
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-[#0B2046]" />
             <span>Navi Mumbai • Seongnam-si • Jubail</span>

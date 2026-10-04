@@ -11,7 +11,7 @@ export default function InsightsPreviewSection() {
   const supportingArticles = insightsData.filter(a => a.id !== featuredArticle.id).slice(0, 3);
 
   return (
-    <section className="py-20 md:py-32 bg-[#FAFAF7] relative">
+    <section className="py-20 md:py-32 bg-[#F8FAFC] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -31,9 +31,9 @@ export default function InsightsPreviewSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-12 items-stretch">
           
           {/* Featured Article (7 cols) */}
-          <div className="lg:col-span-7 bg-white border border-[#DFDFD4] rounded-[32px] p-6 sm:p-10 shadow-card hover:shadow-elevated transition-all duration-300 flex flex-col justify-between group">
+          <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[32px] p-6 sm:p-10 shadow-card hover:shadow-elevated transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-[#EBEBE2] mb-6">
+              <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-[#E2E8F0] mb-6">
                 <img
                   src={featuredArticle.image}
                   alt={featuredArticle.title}
@@ -53,7 +53,7 @@ export default function InsightsPreviewSection() {
                 <span>{featuredArticle.date}</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0E1116] group-hover:text-[#0B2046] transition-colors font-display uppercase tracking-tight leading-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0F172A] group-hover:text-[#0B2046] transition-colors font-display uppercase tracking-tight leading-tight">
                 {featuredArticle.title}
               </h3>
 
@@ -62,7 +62,7 @@ export default function InsightsPreviewSection() {
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-[#F0EFE8] flex items-center justify-between">
+            <div className="mt-8 pt-6 border-t border-[#E2E8F0] flex items-center justify-between">
               <span className="text-xs font-semibold text-[#525866]">By {featuredArticle.author}</span>
               <Link
                 to={`/insights#${featuredArticle.id}`}
@@ -80,7 +80,7 @@ export default function InsightsPreviewSection() {
               <Link
                 key={article.id}
                 to={`/insights#${article.id}`}
-                className="p-6 bg-white border border-[#DFDFD4] hover:border-[#0B2046] rounded-3xl shadow-subtle hover:shadow-card transition-all duration-300 flex flex-col justify-between group flex-1"
+                className="p-6 bg-white border border-[#E2E8F0] hover:border-[#0B2046] rounded-3xl shadow-subtle hover:shadow-card transition-all duration-300 flex flex-col justify-between group flex-1"
               >
                 <div>
                   <div className="flex items-center justify-between text-xs text-[#6B7280] mb-2">
@@ -88,7 +88,7 @@ export default function InsightsPreviewSection() {
                     <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {article.readTime}</span>
                   </div>
 
-                  <h4 className="text-base font-bold text-[#0E1116] group-hover:text-[#0B2046] transition-colors font-display uppercase tracking-tight line-clamp-2">
+                  <h4 className="text-base font-bold text-[#0F172A] group-hover:text-[#0B2046] transition-colors font-display uppercase tracking-tight line-clamp-2">
                     {article.title}
                   </h4>
 
@@ -97,7 +97,7 @@ export default function InsightsPreviewSection() {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-[#F0EFE8] flex items-center justify-between text-[11px] font-semibold text-[#8B92A2] group-hover:text-[#0B2046] transition-colors">
+                <div className="mt-4 pt-3 border-t border-[#E2E8F0] flex items-center justify-between text-[11px] font-semibold text-[#8B92A2] group-hover:text-[#0B2046] transition-colors">
                   <span>Explore Topic</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </div>

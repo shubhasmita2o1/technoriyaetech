@@ -52,7 +52,7 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAFAF7] text-[#111215] relative">
+    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0F172A] relative">
       <Navbar onOpenContact={() => openContact()} />
       
       <main className="flex-grow">

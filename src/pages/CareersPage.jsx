@@ -59,7 +59,7 @@ export default function CareersPage({ onOpenContact }) {
       />
 
       {/* Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>Talent &amp; Engineering Culture</Badge>
           
@@ -75,9 +75,9 @@ export default function CareersPage({ onOpenContact }) {
           {/* Core Perks Strip */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {careersData.benefits.map((b, idx) => (
-              <div key={idx} className="bg-white border border-[#DFDFD4] rounded-2xl p-6 shadow-subtle">
+              <div key={idx} className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-subtle">
                 <span className="text-xs font-mono font-bold text-[#0B2046] block mb-2">BENEFIT 0{idx + 1}</span>
-                <h3 className="text-base font-bold text-[#0E1116] font-display mb-1.5">{b.title}</h3>
+                <h3 className="text-base font-bold text-[#0F172A] font-display mb-1.5">{b.title}</h3>
                 <p className="text-xs text-[#525866] leading-relaxed">{b.desc}</p>
               </div>
             ))}
@@ -86,7 +86,7 @@ export default function CareersPage({ onOpenContact }) {
       </section>
 
       {/* Open Positions Section */}
-      <section className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Active Requisitions"
@@ -111,7 +111,7 @@ export default function CareersPage({ onOpenContact }) {
                     className={`p-5 rounded-2xl cursor-pointer border transition-all duration-300 ${
                       isSelected
                         ? 'bg-white border-[#0B2046] shadow-card translate-x-1.5'
-                        : 'bg-white/60 hover:bg-white border-[#DFDFD4]'
+                        : 'bg-white/60 hover:bg-white border-[#E2E8F0]'
                     }`}
                   >
                     <div className="flex items-center justify-between text-[11px] font-mono text-[#525866] mb-1">
@@ -120,7 +120,7 @@ export default function CareersPage({ onOpenContact }) {
                     </div>
 
                     <h3 className={`text-base font-bold font-display uppercase tracking-tight ${
-                      isSelected ? 'text-[#0B2046]' : 'text-[#0E1116]'
+                      isSelected ? 'text-[#0B2046]' : 'text-[#0F172A]'
                     }`}>
                       {opening.title}
                     </h3>
@@ -136,14 +136,14 @@ export default function CareersPage({ onOpenContact }) {
             </div>
 
             {/* Right Opening Deep Dive & Application Form (7 cols) */}
-            <div className="lg:col-span-7 bg-white border border-[#DFDFD4] rounded-[32px] p-6 sm:p-10 shadow-card">
+            <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[32px] p-6 sm:p-10 shadow-card">
               <div>
-                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#F0EFE8]">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#E2E8F0]">
                   <Badge variant="primary" size="sm">{activeOpening.department}</Badge>
                   <span className="text-xs font-mono text-[#525866]">Req #{activeOpening.id}</span>
                 </div>
 
-                <h2 className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+                <h2 className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
                   {activeOpening.title}
                 </h2>
                 <div className="mt-2 flex items-center gap-4 text-xs text-[#525866]">
@@ -188,8 +188,8 @@ export default function CareersPage({ onOpenContact }) {
               </div>
 
               {/* In-Page Application Form */}
-              <div className="mt-10 pt-8 border-t border-[#E5E5DC]">
-                <h3 className="text-base font-bold text-[#0E1116] font-display uppercase tracking-tight mb-4">
+              <div className="mt-10 pt-8 border-t border-[#E2E8F0]">
+                <h3 className="text-base font-bold text-[#0F172A] font-display uppercase tracking-tight mb-4">
                   Apply for this Position
                 </h3>
 
@@ -215,7 +215,7 @@ export default function CareersPage({ onOpenContact }) {
                           onChange={handleInputChange}
                           required
                           placeholder="Your Name"
-                          className="w-full px-3.5 py-2 bg-[#F9F9F4] border border-[#DFDFD4] rounded-xl text-xs text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                          className="w-full px-3.5 py-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-xs text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                         />
                       </div>
 
@@ -230,7 +230,7 @@ export default function CareersPage({ onOpenContact }) {
                           onChange={handleInputChange}
                           required
                           placeholder="name@domain.com"
-                          className="w-full px-3.5 py-2 bg-[#F9F9F4] border border-[#DFDFD4] rounded-xl text-xs text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                          className="w-full px-3.5 py-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-xs text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                         />
                       </div>
                     </div>
@@ -246,7 +246,7 @@ export default function CareersPage({ onOpenContact }) {
                           value={applicationData.phone}
                           onChange={handleInputChange}
                           placeholder="+91..."
-                          className="w-full px-3.5 py-2 bg-[#F9F9F4] border border-[#DFDFD4] rounded-xl text-xs text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
+                          className="w-full px-3.5 py-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-xs text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046]"
                         />
                       </div>
 
@@ -264,7 +264,7 @@ export default function CareersPage({ onOpenContact }) {
                           />
                           <label
                             htmlFor="career-resume"
-                            className="w-full px-3.5 py-2 bg-[#F9F9F4] border border-[#DFDFD4] rounded-xl text-xs text-[#525866] flex items-center justify-between cursor-pointer hover:bg-white transition"
+                            className="w-full px-3.5 py-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-xs text-[#525866] flex items-center justify-between cursor-pointer hover:bg-white transition"
                           >
                             <span className="truncate">{applicationData.resumeName || "Choose file..."}</span>
                             <Upload className="w-3.5 h-3.5 text-[#0B2046]" />
@@ -283,7 +283,7 @@ export default function CareersPage({ onOpenContact }) {
                         value={applicationData.coverNote}
                         onChange={handleInputChange}
                         placeholder="Briefly state your core technical achievements or links to published repositories..."
-                        className="w-full px-3.5 py-2 bg-[#F9F9F4] border border-[#DFDFD4] rounded-xl text-xs text-[#111215] focus:outline-none focus:ring-2 focus:ring-[#0B2046] resize-none"
+                        className="w-full px-3.5 py-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-xs text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#0B2046] resize-none"
                       />
                     </div>
 

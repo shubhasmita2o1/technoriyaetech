@@ -19,8 +19,8 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 // Fallback Loading Skeleton - Clean, Light Theme
 function RouteLoader() {
   return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center p-8 bg-[#FAFAF7]">
-      <div className="w-10 h-10 border-2 border-[#DFDFD4] border-t-[#0B2046] rounded-full animate-spin mb-4" />
+    <div className="min-h-[60vh] flex flex-col items-center justify-center p-8 bg-[#F8FAFC]">
+      <div className="w-10 h-10 border-2 border-[#E2E8F0] border-t-[#0B2046] rounded-full animate-spin mb-4" />
       <span className="text-xs font-mono uppercase tracking-widest text-[#525866]">
         Loading Enterprise Infrastructure...
       </span>

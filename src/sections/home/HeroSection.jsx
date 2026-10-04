@@ -31,7 +31,7 @@ export default function HeroSection({ onOpenContact }) {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[70px] font-extrabold text-[#0B0D11] tracking-tight leading-[1.04] font-display uppercase">
               Engineering <br />
               Technology for a <br />
-              <span className="text-[#0B2046] underline decoration-[#DFDFD4] decoration-2 underline-offset-8">
+              <span className="text-[#0B2046] underline decoration-[#E2E8F0] decoration-2 underline-offset-8">
                 Changing World.
               </span>
             </h1>
@@ -60,7 +60,7 @@ export default function HeroSection({ onOpenContact }) {
             </div>
 
             {/* Credibility Ticker Bar */}
-            <div className="mt-14 pt-8 border-t border-[#DFDFD4] grid grid-cols-3 gap-6">
+            <div className="mt-14 pt-8 border-t border-[#E2E8F0] grid grid-cols-3 gap-6">
               <div>
                 <span className="text-2xl sm:text-3xl font-extrabold text-[#0B2046] font-display">IIT &amp; IISc</span>
                 <p className="text-xs text-[#525866] mt-1 font-medium">Academic leadership &amp; advisory pedigree</p>
@@ -79,10 +79,10 @@ export default function HeroSection({ onOpenContact }) {
 
           {/* Editorial Visual Composition Column (5 cols) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-[32px] overflow-hidden bg-white border border-[#DFDFD4] p-3 shadow-elevated">
+            <div className="relative rounded-[32px] overflow-hidden bg-white border border-[#E2E8F0] p-3 shadow-elevated">
               
               {/* Primary Image: Enterprise Architecture & Technology */}
-              <div className="relative h-[380px] sm:h-[440px] rounded-[24px] overflow-hidden bg-[#ECECE5]">
+              <div className="relative h-[380px] sm:h-[440px] rounded-[24px] overflow-hidden bg-[#E2E8F0]">
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
                   alt="Enterprise Modern Technology Infrastructure"
@@ -110,23 +110,23 @@ export default function HeroSection({ onOpenContact }) {
               </div>
 
               {/* Floating Floating Interactive Status Card */}
-              <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md border border-[#DFDFD4] p-4 rounded-2xl shadow-float max-w-[240px] hidden sm:block">
+              <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md border border-[#E2E8F0] p-4 rounded-2xl shadow-float max-w-[240px] hidden sm:block">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-200">
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-[#0E1116] block">Zero Breach Track</span>
+                    <span className="text-xs font-bold text-[#0F172A] block">Zero Breach Track</span>
                     <span className="text-[10px] text-[#525866]">ISO &amp; CERT-In Audited</span>
                   </div>
                 </div>
-                <div className="w-full bg-[#F0EFE8] h-1.5 rounded-full overflow-hidden">
+                <div className="w-full bg-[#E2E8F0] h-1.5 rounded-full overflow-hidden">
                   <div className="bg-emerald-500 h-full w-[99.9%]" />
                 </div>
               </div>
 
               {/* Floating Global Operations Indicator */}
-              <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md border border-[#DFDFD4] px-4 py-2.5 rounded-2xl shadow-card hidden sm:flex items-center gap-2.5">
+              <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md border border-[#E2E8F0] px-4 py-2.5 rounded-2xl shadow-card hidden sm:flex items-center gap-2.5">
                 <span className="w-2 h-2 rounded-full bg-[#2563EB] animate-ping" />
                 <span className="text-xs font-bold text-[#0B2046]">Pangyo • Jubail • Navi Mumbai</span>
               </div>
@@ -135,11 +135,11 @@ export default function HeroSection({ onOpenContact }) {
 
             {/* Quick Solution Anchors under visual */}
             <div className="mt-6 flex flex-wrap items-center gap-2 text-xs text-[#525866]">
-              <span className="font-semibold text-[#0E1116]">Strategic Focus:</span>
-              <span className="px-2.5 py-1 bg-white border border-[#DFDFD4] rounded-lg">SAP S/4HANA</span>
-              <span className="px-2.5 py-1 bg-white border border-[#DFDFD4] rounded-lg">DFIR Incident Response</span>
-              <span className="px-2.5 py-1 bg-white border border-[#DFDFD4] rounded-lg">Private 5G SA</span>
-              <span className="px-2.5 py-1 bg-white border border-[#DFDFD4] rounded-lg">Pollution Automation</span>
+              <span className="font-semibold text-[#0F172A]">Strategic Focus:</span>
+              <span className="px-2.5 py-1 bg-white border border-[#E2E8F0] rounded-lg">SAP S/4HANA</span>
+              <span className="px-2.5 py-1 bg-white border border-[#E2E8F0] rounded-lg">DFIR Incident Response</span>
+              <span className="px-2.5 py-1 bg-white border border-[#E2E8F0] rounded-lg">Private 5G SA</span>
+              <span className="px-2.5 py-1 bg-white border border-[#E2E8F0] rounded-lg">Pollution Automation</span>
             </div>
 
           </div>

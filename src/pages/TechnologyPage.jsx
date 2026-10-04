@@ -31,7 +31,7 @@ export default function TechnologyPage({ onOpenContact }) {
       />
 
       {/* Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>Deep-Tech Portfolio</Badge>
           
@@ -46,7 +46,7 @@ export default function TechnologyPage({ onOpenContact }) {
 
           {/* Quick Filter Ribbon */}
           <div className="mt-10 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-[#111215] mr-2">Vectors:</span>
+            <span className="text-xs font-semibold text-[#0F172A] mr-2">Vectors:</span>
             {technologiesData.map(tech => (
               <a
                 key={tech.id}
@@ -55,7 +55,7 @@ export default function TechnologyPage({ onOpenContact }) {
                 className={`text-xs font-mono px-3.5 py-1.5 rounded-full border transition-all ${
                   activeTechId === tech.id
                     ? 'bg-[#0B2046] text-white border-[#0B2046]'
-                    : 'bg-white text-[#525866] border-[#DFDFD4] hover:border-[#0B2046]'
+                    : 'bg-white text-[#525866] border-[#E2E8F0] hover:border-[#0B2046]'
                 }`}
               >
                 {tech.name}
@@ -66,22 +66,22 @@ export default function TechnologyPage({ onOpenContact }) {
       </section>
 
       {/* Technologies Detailed Catalog */}
-      <section className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {technologiesData.map((tech) => (
             <div 
               key={tech.id}
               id={tech.id}
-              className="scroll-mt-28 bg-white border border-[#DFDFD4] rounded-[36px] p-8 sm:p-12 shadow-card"
+              className="scroll-mt-28 bg-white border border-[#E2E8F0] rounded-[36px] p-8 sm:p-12 shadow-card"
             >
               {/* Header */}
-              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-[#F0EFE8]">
+              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-[#E2E8F0]">
                 <div>
                   <div className="flex items-center gap-2.5 mb-2">
                     <Badge variant="primary" size="sm">{tech.category}</Badge>
                     <span className="text-xs font-mono text-[#525866]">Deep-Tech Vector</span>
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
                     {tech.name}
                   </h2>
                   <p className="mt-2 text-base sm:text-lg font-semibold text-[#0B2046]">
@@ -92,7 +92,7 @@ export default function TechnologyPage({ onOpenContact }) {
                 <div className="flex flex-col sm:flex-row items-start lg:items-center gap-3">
                   <Link
                     to={`/centers-of-excellence#${tech.relatedLab}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2046] hover:text-[#2563EB] px-4 py-2.5 bg-[#F4F4EE] hover:bg-[#EAEAE2] rounded-full transition"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2046] hover:text-[#2563EB] px-4 py-2.5 bg-[#F1F5F9] hover:bg-[#E2E8F0] rounded-full transition"
                   >
                     <span>Inspect CoE Lab Proving Ground</span>
                     <ArrowUpRight className="w-4 h-4" />
@@ -114,7 +114,7 @@ export default function TechnologyPage({ onOpenContact }) {
               </p>
 
               {/* Metrics Strip */}
-              <div className="my-8 grid grid-cols-1 sm:grid-cols-3 gap-4 bg-[#F9F9F4] border border-[#E5E5DC] rounded-2xl p-5 text-center">
+              <div className="my-8 grid grid-cols-1 sm:grid-cols-3 gap-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl p-5 text-center">
                 {tech.keyMetrics.map((m, mIdx) => (
                   <div key={mIdx}>
                     <span className="block text-2xl font-mono font-extrabold text-[#0B2046]">{m.value}</span>
@@ -132,10 +132,10 @@ export default function TechnologyPage({ onOpenContact }) {
                   {tech.corePillars.map((pillar, pIdx) => (
                     <div 
                       key={pIdx} 
-                      className="p-6 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl hover:border-[#0B2046] transition"
+                      className="p-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl hover:border-[#0B2046] transition"
                     >
                       <span className="text-xs font-mono font-bold text-[#0B2046] block mb-2">0{pIdx + 1}</span>
-                      <h4 className="text-sm font-bold text-[#0E1116] font-display mb-1.5">{pillar.title}</h4>
+                      <h4 className="text-sm font-bold text-[#0F172A] font-display mb-1.5">{pillar.title}</h4>
                       <p className="text-xs text-[#525866] leading-relaxed">{pillar.desc}</p>
                     </div>
                   ))}
@@ -148,10 +148,10 @@ export default function TechnologyPage({ onOpenContact }) {
       </section>
 
       {/* R&D Call to Action */}
-      <section className="py-20 bg-[#F4F4EE] border-t border-[#DFDFD4]">
+      <section className="py-20 bg-[#F1F5F9] border-t border-[#E2E8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge variant="primary" dot={true}>Hardware &amp; Software R&amp;D</Badge>
-          <h2 className="mt-6 text-3xl sm:text-4xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+          <h2 className="mt-6 text-3xl sm:text-4xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
             Have a Deep-Tech Hardware or Telecom Challenge?
           </h2>
           <p className="mt-4 text-base text-[#4B5563] max-w-2xl mx-auto leading-relaxed">

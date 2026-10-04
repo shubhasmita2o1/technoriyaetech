@@ -15,8 +15,8 @@ export default function Badge({
   };
 
   const variantStyles = {
-    neutral: "bg-[#F0EFE8] text-[#333742] border border-[#DFDFD4]",
-    white: "bg-white text-[#111215] border border-[#E2E2D6] shadow-subtle",
+    neutral: "bg-[#E2E8F0] text-[#333742] border border-[#E2E8F0]",
+    white: "bg-white text-[#0F172A] border border-[#E2E8F0] shadow-subtle",
     primary: "bg-[#F0F5FD] text-[#0B2046] border border-[#BFDCF8]",
     accent: "bg-[#EFF6FF] text-[#1D4ED8] border border-[#BFDBFE]",
     amber: "bg-[#FEF3C7] text-[#92400E] border border-[#FDE68A]",

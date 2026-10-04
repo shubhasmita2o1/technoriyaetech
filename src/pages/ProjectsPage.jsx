@@ -31,7 +31,7 @@ export default function ProjectsPage({ onOpenContact }) {
       />
 
       {/* Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>Proven Engineering Execution</Badge>
           
@@ -46,7 +46,7 @@ export default function ProjectsPage({ onOpenContact }) {
 
           {/* Filter Pills */}
           <div className="mt-10 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-[#111215] mr-2">Filter:</span>
+            <span className="text-xs font-semibold text-[#0F172A] mr-2">Filter:</span>
             {categories.map(cat => (
               <button
                 key={cat.value}
@@ -54,7 +54,7 @@ export default function ProjectsPage({ onOpenContact }) {
                 className={`text-xs font-mono px-3.5 py-1.5 rounded-full border transition-all ${
                   filter === cat.value
                     ? 'bg-[#0B2046] text-white border-[#0B2046]'
-                    : 'bg-white text-[#525866] border-[#DFDFD4] hover:border-[#0B2046]'
+                    : 'bg-white text-[#525866] border-[#E2E8F0] hover:border-[#0B2046]'
                 }`}
               >
                 {cat.label}
@@ -65,17 +65,17 @@ export default function ProjectsPage({ onOpenContact }) {
       </section>
 
       {/* Projects List */}
-      <section className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           {filteredProjects.map((project, idx) => (
             <div
               key={project.id}
               id={project.id}
-              className="scroll-mt-28 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white border border-[#DFDFD4] rounded-[36px] p-6 sm:p-10 shadow-card"
+              className="scroll-mt-28 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white border border-[#E2E8F0] rounded-[36px] p-6 sm:p-10 shadow-card"
             >
               {/* Visual & Metrics (5 cols) */}
               <div className="lg:col-span-5">
-                <div className="relative rounded-[24px] overflow-hidden aspect-[4/3] bg-[#EBEBE2] border border-[#E5E5DC]">
+                <div className="relative rounded-[24px] overflow-hidden aspect-[4/3] bg-[#E2E8F0] border border-[#E2E8F0]">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -89,7 +89,7 @@ export default function ProjectsPage({ onOpenContact }) {
                   </div>
                 </div>
 
-                <div className="mt-4 grid grid-cols-3 gap-2 bg-[#F9F9F4] border border-[#E5E5DC] rounded-2xl p-3 text-center">
+                <div className="mt-4 grid grid-cols-3 gap-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl p-3 text-center">
                   {project.metrics.map((m, mIdx) => (
                     <div key={mIdx}>
                       <span className="block text-xs sm:text-sm font-extrabold text-[#0B2046] font-mono">{m.value}</span>
@@ -107,7 +107,7 @@ export default function ProjectsPage({ onOpenContact }) {
                     <span className="text-xs font-mono text-[#525866]">Production Deployed</span>
                   </div>
 
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
                     {project.title}
                   </h2>
                   <p className="mt-1 text-sm font-semibold text-[#0B2046]">
@@ -116,15 +116,15 @@ export default function ProjectsPage({ onOpenContact }) {
 
                   {/* Challenge & Solution Blocks */}
                   <div className="mt-5 space-y-3 text-xs leading-relaxed">
-                    <div className="p-4 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl">
-                      <strong className="text-[#0E1116] block uppercase tracking-wider text-[10px] font-mono mb-1">
+                    <div className="p-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl">
+                      <strong className="text-[#0F172A] block uppercase tracking-wider text-[10px] font-mono mb-1">
                         Operational Challenge:
                       </strong>
                       <p className="text-[#525866]">{project.challenge}</p>
                     </div>
 
-                    <div className="p-4 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl">
-                      <strong className="text-[#0E1116] block uppercase tracking-wider text-[10px] font-mono mb-1">
+                    <div className="p-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl">
+                      <strong className="text-[#0F172A] block uppercase tracking-wider text-[10px] font-mono mb-1">
                         Engineering Solution:
                       </strong>
                       <p className="text-[#525866]">{project.solution}</p>
@@ -140,10 +140,10 @@ export default function ProjectsPage({ onOpenContact }) {
                 </div>
 
                 {/* Bottom Row */}
-                <div className="mt-6 pt-5 border-t border-[#F0EFE8] flex flex-wrap items-center justify-between gap-4">
+                <div className="mt-6 pt-5 border-t border-[#E2E8F0] flex flex-wrap items-center justify-between gap-4">
                   <div className="flex flex-wrap items-center gap-1.5">
                     {project.technologies.map(tech => (
-                      <span key={tech} className="text-[11px] font-mono px-2.5 py-1 bg-[#F4F4EE] text-[#4A4E5A] rounded-md">
+                      <span key={tech} className="text-[11px] font-mono px-2.5 py-1 bg-[#F1F5F9] text-[#4A4E5A] rounded-md">
                         {tech}
                       </span>
                     ))}

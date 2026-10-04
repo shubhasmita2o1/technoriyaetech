@@ -27,10 +27,10 @@ export default function Button({
 
   const variantStyles = {
     primary: "bg-[#0B2046] hover:bg-[#153468] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0",
-    secondary: "bg-white hover:bg-[#F4F4EE] text-[#111215] border border-[#DFDFD4] hover:border-[#B8B8A8] shadow-subtle hover:-translate-y-0.5 active:translate-y-0",
+    secondary: "bg-white hover:bg-[#F1F5F9] text-[#0F172A] border border-[#E2E8F0] hover:border-[#B8B8A8] shadow-subtle hover:-translate-y-0.5 active:translate-y-0",
     accent: "bg-[#2563EB] hover:bg-[#1D4ED8] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0",
-    ghost: "bg-transparent hover:bg-[#ECECE5]/60 text-[#111215] hover:text-[#0B2046]",
-    outline: "bg-transparent border border-[#DFDFD4] hover:border-[#0B2046] text-[#111215] hover:bg-white",
+    ghost: "bg-transparent hover:bg-[#E2E8F0]/60 text-[#0F172A] hover:text-[#0B2046]",
+    outline: "bg-transparent border border-[#E2E8F0] hover:border-[#0B2046] text-[#0F172A] hover:bg-white",
   };
 
   const IconComponent = iconType === 'diagonal' ? ArrowUpRight : ArrowRight;

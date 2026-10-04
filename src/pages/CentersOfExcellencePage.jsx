@@ -31,7 +31,7 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
       />
 
       {/* Hero Header */}
-      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F4F4EE] border-b border-[#DFDFD4]">
+      <section className="pt-16 pb-20 md:pt-24 md:pb-28 bg-[#F1F5F9] border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="primary" dot={true}>R&amp;D Proving Grounds</Badge>
           
@@ -46,7 +46,7 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
 
           {/* Quick Lab Jump Ribbon */}
           <div className="mt-10 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-[#111215] mr-2">The 8 Labs:</span>
+            <span className="text-xs font-semibold text-[#0F172A] mr-2">The 8 Labs:</span>
             {coeLabs.map(lab => (
               <a
                 key={lab.id}
@@ -55,7 +55,7 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
                 className={`text-xs font-mono px-3.5 py-1.5 rounded-full border transition-all ${
                   activeLabId === lab.id
                     ? 'bg-[#0B2046] text-white border-[#0B2046]'
-                    : 'bg-white text-[#525866] border-[#DFDFD4] hover:border-[#0B2046]'
+                    : 'bg-white text-[#525866] border-[#E2E8F0] hover:border-[#0B2046]'
                 }`}
               >
                 {lab.code}: {lab.name}
@@ -66,16 +66,16 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
       </section>
 
       {/* 8 Labs Catalog */}
-      <section className="py-20 md:py-32 bg-[#FAFAF7]">
+      <section className="py-20 md:py-32 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {coeLabs.map((lab) => (
             <div 
               key={lab.id}
               id={lab.id}
-              className="scroll-mt-28 bg-white border border-[#DFDFD4] rounded-[36px] p-8 sm:p-12 shadow-card"
+              className="scroll-mt-28 bg-white border border-[#E2E8F0] rounded-[36px] p-8 sm:p-12 shadow-card"
             >
               {/* Header */}
-              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-[#F0EFE8]">
+              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-[#E2E8F0]">
                 <div className="max-w-3xl">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-xs font-mono font-bold px-2.5 py-1 bg-[#0B2046] text-white rounded-full">
@@ -83,7 +83,7 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
                     </span>
                     <span className="text-xs font-mono text-[#525866]">Research &amp; Prototyping Facility</span>
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
                     {lab.name}
                   </h2>
                   <p className="mt-1 text-base font-semibold text-[#0B2046]">
@@ -102,7 +102,7 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
 
               {/* Lab Visual & Stats */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 my-8 items-center">
-                <div className="lg:col-span-7 rounded-2xl overflow-hidden aspect-[16/9] bg-[#EBEBE2] border border-[#E5E5DC]">
+                <div className="lg:col-span-7 rounded-2xl overflow-hidden aspect-[16/9] bg-[#E2E8F0] border border-[#E2E8F0]">
                   <img
                     src={lab.image}
                     alt={lab.name}
@@ -112,21 +112,21 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
                 </div>
 
                 <div className="lg:col-span-5 space-y-3">
-                  <div className="p-4 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl">
+                  <div className="p-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl">
                     <span className="text-[10px] font-mono uppercase text-[#0B2046] font-bold block mb-1">
                       Facility Tagline
                     </span>
-                    <p className="text-xs font-semibold text-[#111215]">{lab.tagline}</p>
+                    <p className="text-xs font-semibold text-[#0F172A]">{lab.tagline}</p>
                   </div>
 
-                  <div className="p-4 bg-[#FAF9F5] border border-[#EBEBE2] rounded-2xl">
+                  <div className="p-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl">
                     <span className="text-[10px] font-mono uppercase text-[#0B2046] font-bold block mb-1">
                       Real-World Enterprise Application
                     </span>
                     <p className="text-xs text-[#525866] leading-relaxed">{lab.realWorldApplication}</p>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-2 p-3 bg-[#F4F4EE] border border-[#DFDFD4] rounded-2xl text-center">
+                  <div className="grid grid-cols-3 gap-2 p-3 bg-[#F1F5F9] border border-[#E2E8F0] rounded-2xl text-center">
                     {Object.entries(lab.stats).map(([k, v]) => (
                       <div key={k}>
                         <span className="block text-xs font-mono font-extrabold text-[#0B2046]">{v}</span>
@@ -138,7 +138,7 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
               </div>
 
               {/* Research Scope & Lab Equipment */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-[#F0EFE8]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-[#E2E8F0]">
                 
                 {/* Focus Areas */}
                 <div>
@@ -178,10 +178,10 @@ export default function CentersOfExcellencePage({ onOpenContact }) {
       </section>
 
       {/* University & Enterprise Incubation Banner */}
-      <section className="py-20 bg-[#F4F4EE] border-t border-[#DFDFD4]">
+      <section className="py-20 bg-[#F1F5F9] border-t border-[#E2E8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge variant="primary" dot={true}>Turnkey Lab Installations</Badge>
-          <h2 className="mt-6 text-3xl sm:text-4xl font-extrabold text-[#0E1116] font-display uppercase tracking-tight">
+          <h2 className="mt-6 text-3xl sm:text-4xl font-extrabold text-[#0F172A] font-display uppercase tracking-tight">
             Commission a Turnkey CoE Lab at Your Institution
           </h2>
           <p className="mt-4 text-base text-[#4B5563] max-w-2xl mx-auto leading-relaxed">
